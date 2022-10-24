@@ -1,13 +1,10 @@
 @font-face {
-  font-family: 'Fraunces';
-  src: url('fonts/Fraunces[SOFT\,WONK\,opsz\,wght].ttf') format('truetype');
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100 900;
 }
 
 @font-face {
-  font-family: 'FrauncesItal';
-  src: url('fonts/Fraunces-Italic[SOFT\,WONK\,opsz\,wght].ttf')
-    format('truetype');
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100 900;
 }
 
@@ -16,7 +13,8 @@
 }
 
 body {
-  font-family: 'Fraunces', serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font: medium;
   font-size: clamp(100%, 0.75rem + 0.75vw, 1.2rem);
   margin: 0;
   padding: 0;
@@ -28,7 +26,7 @@ main {
   display: grid;
   row-gap: 2em;
   grid-template-columns: 1fr;
-  background-color: navajowhite;
+  background-color:darkgrey;
   justify-items: center;
 }
 
@@ -36,16 +34,20 @@ h1,
 h2,
 h3 {
   text-align: center;
+  font-style: italic;
+  font-variant:normal
   font-variation-settings: 'wght' 200, 'WONK' 1, 'opsz' 144;
   margin: 0;
 }
 
 h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-variant: small-caps bolder;
   font-size: clamp(100%, 1.5rem + 3vw, 3.5rem);
 }
 
 h2 {
-  font-family: 'FrauncesItal', serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: clamp(100%, 1rem + 1vw, 4rem);
 }
 
@@ -66,8 +68,8 @@ aside {
 }
 
 article {
-  background-color: #adffde;
-  border: 2px solid #8accb2;
+  background-color: slategrey;
+  border: 3px solid burlywood;
 }
 
 article ul {
@@ -79,8 +81,8 @@ article ul {
 }
 
 aside {
-  background-color: #deadff;
-  border: 2px solid #6c3d8e;
+  background-color:darkkhaki;
+  border: 2px solid darkgreen;
 }
 
 aside p {
@@ -89,10 +91,9 @@ aside p {
 }
 
 .bye {
-  font-family: 'FrauncesItal', serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-variation-settings: 'WONK' 0.971, 'SOFT' 100, 'opsz' 144;
-  font-style: italic;
-  letter-spacing: 0.277em;
+  font-variant: small-caps;
   font-weight: 660;
   text-align: center;
 }
